@@ -1,26 +1,32 @@
 .work-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1920px;
+    height: 100%;
 }
 
 .intro-container {
     position: relative;
-    width: 100vw;
+    width: 1920px;
     height: 100vh;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.97) 100%);
 }
 
 .intro {
-    position: relative;
+    position:relative;
     top: 25%;
     margin-left: 10%;
 }
 
-.intro-name {
+.tools {
+    position: relative;
+    top: 40%;
+    margin-left: 10%;
+
+}
+.intro p {
     font-size: 64px;
     font-weight: 700;
-    line-height: 120px;
+    margin: 0;
 }
 
 .intro-desc-1, .intro-desc-2 {
@@ -30,7 +36,128 @@
 }
 .projects {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.97) 100%);
+    width: 1920px;
+    height: 100%;
+    background: rgba(0,0,0,0.97);
 }
+
+.projects p {
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+.pando {
+    position: relative;
+    width: 1536px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+}
+
+.pando-text {
+    position: relative;
+    margin-top: -12%;
+    margin-left: 5%;
+}
+
+.popinion-text {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.pando-desc, .popinion-desc {
+    position: relative;
+    font-size: 24px !important;
+    color: rgba(255,255,255, 0.5);
+    width: 500px;
+    font-weight: 600;
+}
+
+.pando-images {
+    position: absolute;
+    right:10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+}
+
+.popinion-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.greenblur, .pinkblur {
+    position: absolute;
+    transition: 0.5s;
+}
+
+.pinkblur-1 {
+    margin-right: 47%;
+    margin-top: 7%;
+}
+.pinkblur-2 {
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+.construction {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 184, 0);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    color: black;
+    font-weight: 700;
+}
+
+.pando:hover .pando-images .greenblur{
+    transform:scale(2);
+}
+
+.popinion:hover .popinion-images .pinkblur {
+    transform: scale(1.5);
+}
+
+.popinion-and-pokemon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1536px;
+    height: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.popinion, .pokemon {
+    position: relative;
+    width: 49.5%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100vw;
+    height: 300px;
+}
+
+
+
