@@ -4,9 +4,14 @@ import Navbar from './Navbar';
 import tools from './tools.png';
 import pando from './pando-mock.png';
 import popinion from './popinion.png';
-import greenblur from './green-blur.png';
-import pinkblur1 from './pink-blur-1.png';
-import pinkblur2 from './pink-blur-2.png';
+import pokemon1 from './pokemon1.png';
+import pokemon2 from './pokemon2.png';
+import scrabble from './scrabble.png';
+import greenblur from './greenblur.png';
+import pinkblur from './pinkblur.png';
+import whiteblur from './whiteblur.png';
+import redblur from './redblur.png';
+import blueblur from './blueblur.png';
 
 const Work = (props) => {
     return(
@@ -34,25 +39,52 @@ const Work = (props) => {
                         <p className='pando-desc'>A health resources map in response to the COVID-19 pandemic.</p>
                     </div>
                     <div className='pando-images'>
-                        <div className='construction'>Under Construction</div>
                         <img className='greenblur' src={greenblur}></img>
-                        <img src={pando}></img>
+                        <img src={pando} className='pando-screenshot'></img>
+                        <div className='construction'>Under Construction</div>
                     </div>
                 </div>
                 <div className='popinion-and-pokemon'>
                     <div className='popinion'>
                         <div className='popinion-text'>
                             <p>Popinion</p>
-                            <p className='popinion-desc'>A social review site for video game, music, film, and book hobbyists</p>
+                            <p className='popinion-desc'>A social review site for video game, music, film, and book hobbyists.</p>
                         </div>
                         <div className='popinion-images'>
-                            <img className='pinkblur pinkblur-1' src={pinkblur1}></img>
-                            <img className='pinkblur pinkblur-2' src={pinkblur2}></img>
-                            <img src={popinion}></img>
+                            <img className='pinkblur' src={pinkblur}></img>
+                            <img className='popinion-screenshot' src={popinion}></img>
                         </div>
                     </div>
                     <div className='pokemon'>
+                        <div className='pokemon-text'>
+                            <p>Poké-Builder</p>
+                            <p className='pokemon-desc'>A team building app for Pokémon Trainers.</p>
+                        </div>
+                        <div className='pokemon-images'>
+                            <img className='whiteblur' src={whiteblur}></img>
+                            <img className='redblur' src={redblur}></img>
+                            <div className='pokemon-screenshots'>
+                                <img src={pokemon1}></img>
+                                <img src ={pokemon2}></img>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div className='scrabble-and-spotimaps'>
+                    <div className='scrabble'>
+                        <div className='scrabble-text'>
+                            <p>Scrabble</p>
+                            <p className='scrabble-desc'>Graphical implementation of Scrabble for the terminal, with AI implementation.</p>
+                        </div>
+                        <div className='scrabble-images'>
+                            <img className='blueblur' src={blueblur}></img>
+                            <img className='scrabble-screenshot' src={scrabble}></img>
+                        </div>
                         
+                    </div>
+                    <div className='spotimaps'>
+
                     </div>
                 </div>
                 <div className='footer'></div>

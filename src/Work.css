@@ -71,12 +71,12 @@
     margin-left: 5%;
 }
 
-.popinion-text {
+.popinion-text, .pokemon-text, .scrabble-text {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.pando-desc, .popinion-desc {
+.pando-desc, .popinion-desc, .pokemon-desc, .scrabble-desc {
     position: relative;
     font-size: 24px !important;
     color: rgba(255,255,255, 0.5);
@@ -95,23 +95,46 @@
     width: 600px;
 }
 
-.popinion-images {
+.pando-screenshot {
+    opacity: 0.6;
+}
+
+.pando-screenshot, .popinion-screenshot, .pokemon-screenshots, .scrabble-screenshot {
+    position: relative;
+    z-index: 1;
+}
+
+.popinion-images, .pokemon-images, .scrabble-images {
     display: flex;
     justify-content: center;
     margin-top: 10%;
 }
-.greenblur, .pinkblur {
+
+.pokemon-images {
+    margin-top: 22%;
+}
+.greenblur, .pinkblur, .whiteblur, .redblur, .blueblur {
     position: absolute;
     transition: 0.5s;
 }
 
-.pinkblur-1 {
-    margin-right: 47%;
-    margin-top: 7%;
+.pinkblur {
+    margin-top: -7%;
+    margin-left: -7%;
 }
-.pinkblur-2 {
+
+.whiteblur {
     margin-top: -5%;
-    margin-left: 5%;
+    margin-right: 40%;
+}
+
+.redblur {
+    margin-top: -5%;
+    margin-left: 40%;
+}
+
+.blueblur {
+    margin-top: -10%;
 }
 
 .construction {
@@ -124,17 +147,16 @@
     border-radius: 25px;
     color: black;
     font-weight: 700;
+    z-index: 2;
 }
 
-.pando:hover .pando-images .greenblur{
-    transform:scale(2);
+.pando:hover .pando-images .greenblur, .popinion:hover .popinion-images .pinkblur, 
+.pokemon:hover .pokemon-images .whiteblur, .pokemon:hover .pokemon-images .redblur,
+.scrabble:hover .scrabble-images .blueblur {
+    transform:scale(1.5);
 }
 
-.popinion:hover .popinion-images .pinkblur {
-    transform: scale(1.5);
-}
-
-.popinion-and-pokemon {
+.popinion-and-pokemon, .scrabble-and-spotimaps {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -145,7 +167,7 @@
     margin-top: 15px;
 }
 
-.popinion, .pokemon {
+.popinion, .pokemon, .scrabble, .spotimaps {
     position: relative;
     width: 49.5%;
     height: 100%;
