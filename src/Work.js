@@ -1,17 +1,17 @@
 import React from 'react';
 import './Work.css';
 import Navbar from './Navbar';
-import tools from './tools.png';
-import pando from './pando-mock.png';
-import popinion from './popinion.png';
-import pokemon1 from './pokemon1.png';
-import pokemon2 from './pokemon2.png';
-import scrabble from './scrabble.png';
-import greenblur from './greenblur.png';
-import pinkblur from './pinkblur.png';
-import whiteblur from './whiteblur.png';
-import redblur from './redblur.png';
-import blueblur from './blueblur.png';
+import tools from './images/tools.png';
+import pando from './images/screenshots/pando-mock.png';
+import popinion from './images/screenshots/popinion.png';
+import pokemon1 from './images/screenshots/pokemon1.png';
+import pokemon2 from './images/screenshots/pokemon2.png';
+import scrabble from './images/screenshots/scrabble.png';
+import greenblur from './images/blurs/greenblur.png';
+import pinkblur from './images/blurs/pinkblur.png';
+import whiteblur from './images/blurs/whiteblur.png';
+import redblur from './images/blurs/redblur.png';
+import blueblur from './images/blurs/blueblur.png';
 
 const Work = (props) => {
     return(
