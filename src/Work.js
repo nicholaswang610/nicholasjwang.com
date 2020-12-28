@@ -1,17 +1,21 @@
 import React from 'react';
 import './Work.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import tools from './images/tools.png';
 import pando from './images/screenshots/pando-mock.png';
 import popinion from './images/screenshots/popinion.png';
 import pokemon1 from './images/screenshots/pokemon1.png';
 import pokemon2 from './images/screenshots/pokemon2.png';
 import scrabble from './images/screenshots/scrabble.png';
+import plots1 from './images/screenshots/plots1.png';
+import plots2 from './images/screenshots/plots2.png'
 import greenblur from './images/blurs/greenblur.png';
 import pinkblur from './images/blurs/pinkblur.png';
 import whiteblur from './images/blurs/whiteblur.png';
 import redblur from './images/blurs/redblur.png';
 import blueblur from './images/blurs/blueblur.png';
+import purpleblur from './images/blurs/purpleblur.png';
 
 const Work = (props) => {
     return(
@@ -71,7 +75,7 @@ const Work = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className='scrabble-and-spotimaps'>
+                <div className='scrabble-and-plots'>
                     <div className='scrabble'>
                         <div className='scrabble-text'>
                             <p>Scrabble</p>
@@ -83,11 +87,23 @@ const Work = (props) => {
                         </div>
                         
                     </div>
-                    <div className='spotimaps'>
-
+                    <div className='plots'>
+                        <div className='plots-text'>
+                            <p>WhatsPlots</p>
+                            <p className='plots-desc'>The Tinder of making hangout plans with friends or strangers (both in-person and virtual)!</p>
+                        </div>
+                        <div className='plots-images'>
+                            <div className='construction'>Under Construction</div>
+                            <img className='purpleblur' src={purpleblur}></img>
+                            <div className='plots-screenshots'>
+                                <img src={plots1}></img>
+                                <img src={plots2}></img>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
-                <div className='footer'></div>
+                <Footer/>
             </div>
         </div>
     );
