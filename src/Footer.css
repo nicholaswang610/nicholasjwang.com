@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    margin-top: 3em;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+}
+
+.links a:hover {
+    color: white;
+}
+
+.created-by {
+    margin-top: 3em;
+}

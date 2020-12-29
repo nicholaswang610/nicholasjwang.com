@@ -1,8 +1,8 @@
 import React from 'react';
 import './Work.css';
 import Navbar from './Navbar';
-import Footer from './Footer';
-import tools from './images/tools.png';
+import FadeSectionIn from './FadeSectionUp';
+import FadeSectionRight from './FadeSectionRight';
 import pando from './images/screenshots/pando-mock.png';
 import popinion from './images/screenshots/popinion.png';
 import pokemon1 from './images/screenshots/pokemon1.png';
@@ -17,95 +17,122 @@ import redblur from './images/blurs/redblur.png';
 import blueblur from './images/blurs/blueblur.png';
 import purpleblur from './images/blurs/purpleblur.png';
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 const Work = (props) => {
     return(
-        <div className='work-container'>
-            <Navbar/>
-            <div className='intro-container'>
-                <div className='intro'>
-                    <p>
-                        Hey! My name is Nicholas Wang.
-                    </p>
-                    <div className='intro-desc-1'>
-                        I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student
-                    </div>
-                    <div className='intro-desc-2'>
-                        and <span style={{color:'#598DF2'}}>web developer</span>.
-                    </div>
-                </div>
-                <img className='tools' src={tools}></img>
-            </div>
-            <div className='projects'>
-                <p>Projects</p>
-                <div className='pando'>
-                    <div className='pando-text'>
-                        <p>Pando</p>
-                        <p className='pando-desc'>A health resources map in response to the COVID-19 pandemic.</p>
-                    </div>
-                    <div className='pando-images'>
-                        <img className='greenblur' src={greenblur}></img>
-                        <img src={pando} className='pando-screenshot'></img>
-                        <div className='construction'>Under Construction</div>
-                    </div>
-                </div>
-                <div className='popinion-and-pokemon'>
-                    <div className='popinion'>
-                        <div className='popinion-text'>
-                            <p>Popinion</p>
-                            <p className='popinion-desc'>A social review site for video game, music, film, and book hobbyists.</p>
-                        </div>
-                        <div className='popinion-images'>
-                            <img className='pinkblur' src={pinkblur}></img>
-                            <img className='popinion-screenshot' src={popinion}></img>
-                        </div>
-                    </div>
-                    <div className='pokemon'>
-                        <div className='pokemon-text'>
-                            <p>Poké-Builder</p>
-                            <p className='pokemon-desc'>A team building app for Pokémon Trainers.</p>
-                        </div>
-                        <div className='pokemon-images'>
-                            <img className='whiteblur' src={whiteblur}></img>
-                            <img className='redblur' src={redblur}></img>
-                            <div className='pokemon-screenshots'>
-                                <img src={pokemon1}></img>
-                                <img src ={pokemon2}></img>
+            <div className='work-container'>
+                <FadeSectionRight>
+                    <Navbar/>
+                </FadeSectionRight>
+                <div className='content'>
+                    <FadeSectionIn>
+                        <div className='intro-container'>
+                            <div className='intro'>
+                                <p>
+                                    Hey! My name is Nicholas Wang.
+                                </p>
+                                <div className='intro-desc'>
+                                    I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student and <span style={{color:'#598DF2'}}>web developer</span>.
+                                </div>
+                                    
                             </div>
-                            
                         </div>
-                    </div>
-                </div>
-                <div className='scrabble-and-plots'>
-                    <div className='scrabble'>
-                        <div className='scrabble-text'>
-                            <p>Scrabble</p>
-                            <p className='scrabble-desc'>Graphical implementation of Scrabble for the terminal, with AI implementation.</p>
-                        </div>
-                        <div className='scrabble-images'>
-                            <img className='blueblur' src={blueblur}></img>
-                            <img className='scrabble-screenshot' src={scrabble}></img>
-                        </div>
-                        
-                    </div>
-                    <div className='plots'>
-                        <div className='plots-text'>
-                            <p>WhatsPlots</p>
-                            <p className='plots-desc'>The Tinder of making hangout plans with friends or strangers (both in-person and virtual)!</p>
-                        </div>
-                        <div className='plots-images'>
-                            <div className='construction'>Under Construction</div>
-                            <img className='purpleblur' src={purpleblur}></img>
-                            <div className='plots-screenshots'>
-                                <img src={plots1}></img>
-                                <img src={plots2}></img>
+                    </FadeSectionIn>
+                    <div className='projects'>
+                        <FadeSectionIn>
+                        <p>Projects</p>
+                        <div className='pando'>
+                            <div className='pando-text'>
+                                <p className='num'>01</p>
+                                <div className='horizontal'></div>
+                                <p>Pando</p>
+                                <p className='pando-desc'>A health resources map in response to the COVID-19 pandemic.</p>
                             </div>
-                            
+                            <div className='pando-images'>
+                                <img className='greenblur' src={greenblur}></img>
+                                <img src={pando} className='pando-screenshot'></img>
+                                <div className='construction'>Under Construction</div>
+                            </div>
                         </div>
+                        </FadeSectionIn>
+                        <FadeSectionIn>
+                        <div className='popinion-and-pokemon'>
+                            <div className='popinion'>
+                                <div className='popinion-text'>
+                                    <p className='num'>02</p>
+                                    <div className='horizontal'></div>
+                                    <p>Popinion</p>
+                                    <p className='popinion-desc'>A social review site for video game, music, film, and book hobbyists.</p>
+                                </div>
+                                <div className='popinion-images'>
+                                    <img className='pinkblur' src={pinkblur}></img>
+                                    <img className='popinion-screenshot' src={popinion}></img>
+                                </div>
+                            </div>
+                            <div className='pokemon'>
+                                <div className='pokemon-text'>
+                                    <p className='num'>03</p>
+                                    <div className='horizontal'></div>
+                                    <p>Poké-Builder</p>
+                                    <p className='pokemon-desc'>A team building app for Pokémon Trainers.</p>
+                                </div>
+                                <div className='pokemon-images'>
+                                    <img className='whiteblur' src={whiteblur}></img>
+                                    <img className='redblur' src={redblur}></img>
+                                    <div className='pokemon-screenshots'>
+                                        <img src={pokemon1}></img>
+                                        <img src ={pokemon2}></img>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </FadeSectionIn>
+                        <FadeSectionIn>
+                        <div className='scrabble-and-plots'>
+                            <div className='scrabble'>
+                                <div className='scrabble-text'>
+                                    <p className='num'>04</p>
+                                    <div className='horizontal'></div>
+                                    <p>Scrabble</p>
+                                    <p className='scrabble-desc'>Graphical implementation of Scrabble for the terminal, with AI implementation.</p>
+                                </div>
+                                <div className='scrabble-images'>
+                                    <img className='blueblur' src={blueblur}></img>
+                                    <img className='scrabble-screenshot' src={scrabble}></img>
+                                </div>
+                                
+                            </div>
+                            <div className='plots'>
+                                <div className='plots-text'>
+                                    <p className='num'>05</p>
+                                    <div className='horizontal'></div>
+                                    <p>WhatsPlots</p>
+                                    <p className='plots-desc'>The Tinder of making hangout plans with friends or strangers (both in-person and virtual)!</p>
+                                </div>
+                                <div className='plots-images'>
+                                    <div className='construction'>Under Construction</div>
+                                    <img className='purpleblur' src={purpleblur}></img>
+                                    <div className='plots-screenshots'>
+                                        <img src={plots1}></img>
+                                        <img src={plots2}></img>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </FadeSectionIn>
                     </div>
+                    <FadeSectionIn>
+                        <div className='connect'>
+                            Want to connect?  <div>Email me at njwang@usc.edu.</div>
+                        </div>
+                    </FadeSectionIn>
                 </div>
-                <Footer/>
             </div>
-        </div>
     );
 }
 

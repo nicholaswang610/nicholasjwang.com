@@ -8,8 +8,10 @@ body {
   font-family: 'Cairo-Custom';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgba(0,0,0,0.97);
   color:white;
   overflow-x: hidden;
+  overflow-anchor: none;
 }
 
 
@@ -17,6 +19,4 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  
 }
