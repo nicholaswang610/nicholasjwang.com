@@ -1,24 +1,55 @@
 import {React} from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 import Footer from './Footer';
 import './Navbar.css';
 
 const Navbar = (props) => {
-    return(
-        <div className='navbar'>
-            <div className='navbar-items'>
-                <NavLink exact to='/' className='logo'>nw</NavLink>
-                <div className='navlinks'>
-                    <NavLink exact to='/' className='navlink'>work</NavLink>
-                    <NavLink exact to='/about' className='navlink'>about</NavLink>
-                    <NavLink exact to='/resume' className='navlink'>resume</NavLink>
-                    <NavLink exact to='/leisure' className='navlink'>leisure</NavLink>
+    const params = props.match.url.split('/');
+    console.log(params);
+    switch(params[1]) {
+        case '' :
+            return(
+                <div className='navbar'>
+                    <div className='navbar-items'>
+                        <NavLink exact to='/' className='logo'>nw</NavLink>
+                        <div className='navlinks'>
+                            <NavLink exact to='/' className='navlink'>work</NavLink>
+                            <NavLink exact to='/about' className='navlink'>about</NavLink>
+                            <NavLink exact to='/resume' className='navlink'>resume</NavLink>
+                            <NavLink exact to='/leisure' className='navlink'>leisure</NavLink>
+                        </div>
+                        <Footer/>
+                    </div>
+                    
                 </div>
-                <Footer/>
-            </div>
-            
-        </div>
-    );
+            );
+        case 'popinion':
+            return(
+                <div className='navbar'>
+                    <div className='project-navbar-items'>
+                    <NavLink exact to ='/' className='navlink'>&lt; back</NavLink>
+                        <div className='navlinks'>
+                            <div className='project-description'><p>role </p>
+                                <div>developer, designer</div>
+                            </div>
+                            <div className='project-description'><p>timeline </p>
+                                <div>2 months</div>
+                            </div>
+                            <div className='project-description'><p>team </p>
+                                <div>individual</div>
+                            </div>
+                            <div className='project-description'><p>tools </p>
+                                <div>figma, react, express, node, mysql</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        default:
+            return(
+                <div></div>
+            )
+    }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

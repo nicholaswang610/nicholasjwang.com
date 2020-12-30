@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Work.css';
 import Navbar from './Navbar';
 import FadeSectionIn from './FadeSectionUp';
@@ -9,7 +10,8 @@ import pokemon1 from './images/screenshots/pokemon1.png';
 import pokemon2 from './images/screenshots/pokemon2.png';
 import scrabble from './images/screenshots/scrabble.png';
 import plots1 from './images/screenshots/plots1.png';
-import plots2 from './images/screenshots/plots2.png'
+import plots2 from './images/screenshots/plots2.png';
+import {ReactComponent as Slider} from './images/slider.svg';
 import greenblur from './images/blurs/greenblur.png';
 import pinkblur from './images/blurs/pinkblur.png';
 import whiteblur from './images/blurs/whiteblur.png';
@@ -17,11 +19,9 @@ import redblur from './images/blurs/redblur.png';
 import blueblur from './images/blurs/blueblur.png';
 import purpleblur from './images/blurs/purpleblur.png';
 
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
 
 const Work = (props) => {
+    window.scrollTo(0, 0);
     return(
             <div className='work-container'>
                 <FadeSectionRight>
@@ -32,12 +32,19 @@ const Work = (props) => {
                         <div className='intro-container'>
                             <div className='intro'>
                                 <p>
-                                    Hey! My name is Nicholas Wang.
+                                    Hey! My name is Nicholas Wang. &#127877;
                                 </p>
                                 <div className='intro-desc'>
                                     I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student and <span style={{color:'#598DF2'}}>web developer</span>.
                                 </div>
-                                    
+                                <a href='mailto: njwang@usc.edu'>
+                                    <div className='work-availability'>
+                                        <div className='work-email'>njwang@usc.edu</div>
+                                        <Slider className='slider'/>
+                                        <p>Available for work</p>
+                                    </div>
+                                </a>
+                                
                             </div>
                         </div>
                     </FadeSectionIn>
@@ -60,7 +67,7 @@ const Work = (props) => {
                         </FadeSectionIn>
                         <FadeSectionIn>
                         <div className='popinion-and-pokemon'>
-                            <div className='popinion'>
+                            <NavLink exact to='/popinion' className='popinion'>
                                 <div className='popinion-text'>
                                     <p className='num'>02</p>
                                     <div className='horizontal'></div>
@@ -71,7 +78,7 @@ const Work = (props) => {
                                     <img className='pinkblur' src={pinkblur}></img>
                                     <img className='popinion-screenshot' src={popinion}></img>
                                 </div>
-                            </div>
+                            </NavLink>
                             <div className='pokemon'>
                                 <div className='pokemon-text'>
                                     <p className='num'>03</p>

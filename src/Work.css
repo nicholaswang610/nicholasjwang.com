@@ -33,6 +33,51 @@
     font-weight: 400;
     margin-top: 1em;
 }
+
+.work-availability {
+    background-color: rgba(0,0,0,0.97);
+    width: 255px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    border: 1px solid rgba(255,255,255, 0.2);
+    border-radius: 15px;
+}
+
+.work-availability p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 63px;
+    color: white;
+}
+
+.work-email {
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.work-availability:hover .work-email {
+    display: block;
+    z-index: 2;
+}
+
+.work-availability:hover .slider, .work-availability:hover p {
+    display: none;
+}
+
+
+.work-availability:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.97);
+}
+
+.slider {
+    margin-right: 12px;
+}
+
 .projects {
     position: relative;
     width: 1632px;
@@ -225,6 +270,11 @@
     background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     overflow: hidden;
+}
+
+.popinion {
+    text-decoration: none;
+    color: white;
 }
 
 .connect {

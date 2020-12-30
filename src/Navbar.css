@@ -1,5 +1,4 @@
 .navbar {
-    position: relative;
     width: 288px;
     height: 100%;
     display: flex;
@@ -11,7 +10,18 @@
     position:fixed;
     margin-top: 8em;
     margin-left: 5em;
+    width: 100px;
 }
+
+.project-navbar-items {
+    position: fixed;
+    margin-top: 8em;
+    margin-left: 2em;
+    width: 200px;
+    margin-right: 2em;
+    font-size: 18px;
+}
+
 .logo {
     font-size: 48px;
     font-weight: bold;
@@ -23,7 +33,7 @@
 .navlinks {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     margin-top: 3em;
 }
 .navlink {
@@ -39,4 +49,15 @@
 
 .navlink:hover {
     color: white;
+}
+
+.project-description p{
+    border-bottom: 1px solid white;
+    margin: 0;
+}
+
+.project-description div{
+    color: rgba(255,255,255,0.5);
+    display: inline-block;
+    margin-bottom: 2em;
 }
