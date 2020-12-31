@@ -25,3 +25,15 @@
     transform: none;
     visibility: visible;
 }
+
+.fade-section-in {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-out;
+}
+
+.fade-section-in.visible {
+    opacity: 1;
+    visibility: visible;
+}

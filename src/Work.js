@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './Work.css';
 import Navbar from './Navbar';
-import FadeSectionIn from './FadeSectionUp';
+import FadeSectionUp from './FadeSectionUp';
 import FadeSectionRight from './FadeSectionRight';
 import pando from './images/screenshots/pando-mock.png';
 import popinion from './images/screenshots/popinion.png';
@@ -28,7 +28,7 @@ const Work = (props) => {
                     <Navbar/>
                 </FadeSectionRight>
                 <div className='content'>
-                    <FadeSectionIn>
+                    <FadeSectionUp>
                         <div className='intro-container'>
                             <div className='intro'>
                                 <p>
@@ -47,9 +47,9 @@ const Work = (props) => {
                                 
                             </div>
                         </div>
-                    </FadeSectionIn>
+                    </FadeSectionUp>
                     <div className='projects'>
-                        <FadeSectionIn>
+                        <FadeSectionUp>
                         <p>Projects</p>
                         <div className='pando'>
                             <div className='pando-text'>
@@ -64,8 +64,8 @@ const Work = (props) => {
                                 <div className='construction'>Under Construction</div>
                             </div>
                         </div>
-                        </FadeSectionIn>
-                        <FadeSectionIn>
+                        </FadeSectionUp>
+                        <FadeSectionUp>
                         <div className='popinion-and-pokemon'>
                             <NavLink exact to='/popinion' className='popinion'>
                                 <div className='popinion-text'>
@@ -97,8 +97,8 @@ const Work = (props) => {
                                 </div>
                             </div>
                         </div>
-                        </FadeSectionIn>
-                        <FadeSectionIn>
+                        </FadeSectionUp>
+                        <FadeSectionUp>
                         <div className='scrabble-and-plots'>
                             <div className='scrabble'>
                                 <div className='scrabble-text'>
@@ -131,13 +131,13 @@ const Work = (props) => {
                                 </div>
                             </div>
                         </div>
-                        </FadeSectionIn>
+                        </FadeSectionUp>
                     </div>
-                    <FadeSectionIn>
+                    <FadeSectionUp>
                         <div className='connect'>
                             Want to connect?  <div>Email me at njwang@usc.edu.</div>
                         </div>
-                    </FadeSectionIn>
+                    </FadeSectionUp>
                 </div>
             </div>
     );
