@@ -59,8 +59,8 @@ const Work = (props) => {
                                 <p className='pando-desc'>A health resources map in response to the COVID-19 pandemic.</p>
                             </div>
                             <div className='pando-images'>
-                                <img className='greenblur' src={greenblur}></img>
-                                <img src={pando} className='pando-screenshot'></img>
+                                <img className='greenblur' src={greenblur} alt='green blur'></img>
+                                <img src={pando} className='pando-screenshot' alt='Screenshot of Pando'></img>
                                 <div className='construction'>Under Construction</div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@ const Work = (props) => {
                                     <p className='popinion-desc'>A social review site for video game, music, film, and book hobbyists.</p>
                                 </div>
                                 <div className='popinion-images'>
-                                    <img className='pinkblur' src={pinkblur}></img>
-                                    <img className='popinion-screenshot' src={popinion}></img>
+                                    <img className='pinkblur' src={pinkblur} alt='pink blur'></img>
+                                    <img className='popinion-screenshot' src={popinion} alt='Screenshot of Popinion'></img>
                                 </div>
                             </NavLink>
                             <div className='pokemon'>
@@ -87,13 +87,12 @@ const Work = (props) => {
                                     <p className='pokemon-desc'>A team building app for Pokémon Trainers.</p>
                                 </div>
                                 <div className='pokemon-images'>
-                                    <img className='whiteblur' src={whiteblur}></img>
-                                    <img className='redblur' src={redblur}></img>
-                                    <div className='pokemon-screenshots'>
-                                        <img src={pokemon1}></img>
-                                        <img src ={pokemon2}></img>
-                                    </div>
-                                    
+                                    <img className='whiteblur' src={whiteblur} alt='white blur'></img>
+                                    <img className='redblur' src={redblur} alt='red blur'></img>
+                                    <div className='pokemon-screenshots' >
+                                        <img src={pokemon1} alt='Screenshot of Poke-Builder(1)'></img>
+                                        <img src ={pokemon2} alt='Screenshot of Poke-Builder(2)'></img>
+                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -108,8 +107,8 @@ const Work = (props) => {
                                     <p className='scrabble-desc'>Graphical implementation of Scrabble for the terminal, with AI implementation.</p>
                                 </div>
                                 <div className='scrabble-images'>
-                                    <img className='blueblur' src={blueblur}></img>
-                                    <img className='scrabble-screenshot' src={scrabble}></img>
+                                    <img className='blueblur' src={blueblur} alt='blue blur'></img>
+                                    <img className='scrabble-screenshot' src={scrabble} alt='Screenshot of Scrabble'></img>
                                 </div>
                                 
                             </div>
@@ -122,10 +121,10 @@ const Work = (props) => {
                                 </div>
                                 <div className='plots-images'>
                                     <div className='construction'>Under Construction</div>
-                                    <img className='purpleblur' src={purpleblur}></img>
+                                    <img className='purpleblur' src={purpleblur} alt='purple blur'></img>
                                     <div className='plots-screenshots'>
-                                        <img src={plots1}></img>
-                                        <img src={plots2}></img>
+                                        <img src={plots1} alt='Screenshot of WhatsPlots(1)'></img>
+                                        <img src={plots2} alt='Screenshot of WhatsPlots(2)'></img>
                                     </div>
                                     
                                 </div>
