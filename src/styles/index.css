@@ -1,6 +1,6 @@
 @font-face {
   font-family: Cairo-Custom;
-  src: url('./font/Cairo-Regular.ttf');
+  src: url('../font/Cairo-Regular.ttf');
 }
 
 body {
@@ -10,8 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgba(0,0,0,0.97);
   color:white;
-  overflow-x: hidden;
   overflow-anchor: none;
+  overflow-x: hidden;
 }
 
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import FadeSectionRight from './FadeSectionRight';
 import FadeSectionUp from './FadeSectionUp';
 import FadeSectionIn from './FadeSectionIn';
 import popinion from './images/popinion-cover.png';
@@ -9,19 +8,17 @@ import firstDraft from './images/first-prototype.png';
 import redesign from './images/redesign.png';
 import finalSolution from './images/final-solution.png';
 import mockupSpread from './images/mockup-spread.png';
-import './Projects.css';
+import './styles/Projects.css';
 
 const Popinion = (props) => {
     window.scrollTo(0,0);
     return(
         <div className='project-container'>
-            <FadeSectionRight>
-                <Navbar></Navbar>
-            </FadeSectionRight>
+            <Navbar></Navbar>
             <div className='content'>
                 <FadeSectionUp>
                     <div className='project-content'>
-                        <div style={{width:'88%', fontSize:'36px', marginBottom: '0.5em'}}>Popinion</div>
+                        <div style={{width:'88%', fontSize:'36px', marginTop:'5%', marginBottom: '0.5em'}}>Popinion</div>
                         <img className='popinion-cover' src={popinion} alt='Project cover'></img>
                     </div>
                 </FadeSectionUp>

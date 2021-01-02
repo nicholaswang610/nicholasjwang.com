@@ -1,11 +1,11 @@
 import React from 'react';
-import FadeSectionRight from './FadeSectionRight';
 import FadeSectionUp from './FadeSectionUp';
 import FadeSectionIn from './FadeSectionIn';
 import Navbar from './Navbar';
 import beach from './images/beach.gif'
-import './About.css';
+import './styles/About.css';
 const About = props => {
+    window.scrollTo(0,0);
     let hourOfDay = new Date().getHours();
     let greeting;
 
@@ -19,9 +19,7 @@ const About = props => {
 
     return(
         <div className='about-container'>
-            <FadeSectionRight>
-                <Navbar></Navbar>
-            </FadeSectionRight>
+            <Navbar/>
             <div className='about-content'>
                 <FadeSectionUp>
                 <div className='biography'>

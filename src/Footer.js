@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './styles/Footer.css';
 const Footer = (props) => {
     return(
         <div className='footer'>
@@ -10,7 +10,7 @@ const Footer = (props) => {
             </div>
             <div className='created-by'>
                 <div>© 2020</div> 
-                <div>Nicholas W.</div>
+                <div>Nicholas<div>Wang</div></div>
             </div>
         </div>
     );

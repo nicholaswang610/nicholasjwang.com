@@ -1,4 +1,3 @@
-import './App.css';
 import Work from './Work';
 import Popinion from './Popinion';
 import About from './About';

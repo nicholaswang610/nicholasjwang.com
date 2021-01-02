@@ -1,7 +1,7 @@
 import {React} from 'react';
 import {NavLink, withRouter} from 'react-router-dom';
 import Footer from './Footer';
-import './Navbar.css';
+import './styles/Navbar.css';
 
 const Navbar = (props) => {
     const params = props.match.url.split('/');
@@ -16,7 +16,7 @@ const Navbar = (props) => {
                             <NavLink exact to='/' className='navlink'>work</NavLink>
                             <NavLink exact to='/about' className='navlink'>about</NavLink>
                             <a href='https://drive.google.com/file/d/18hofa9_fnNGYDm5SaP0nXMFCR1DgyCqi/view?usp=sharing' target='_blank' rel="noreferrer" className='navlink'>resume</a>
-                            <NavLink exact to='/leisure' className='navlink'>leisure</NavLink>
+                            {/**<NavLink exact to='/leisure' className='navlink'>leisure</NavLink>*/}
                         </div>
                         <Footer/>
                     </div>
@@ -25,7 +25,7 @@ const Navbar = (props) => {
             );
         case 'popinion':
             return(
-                <div className='navbar'>
+                <div className='project-navbar'>
                     <div className='project-navbar-items'>
                         <NavLink exact to ='/' className='navlink'>&lt; back</NavLink>
                         <div className='navlinks'>
@@ -47,14 +47,14 @@ const Navbar = (props) => {
             )
         case 'about':
             return(
-                <div className='navbar'>
-                    <div className='navbar-items'>
+                <div className='project-navbar'>
+                    <div className='about-navbar-items'>
                         <NavLink exact to='/' className='navlink'>&lt; back</NavLink>
                         <div className='navlinks'>
                             <NavLink exact to='/' className='navlink'>work</NavLink>
                             <NavLink exact to='/about' className='navlink'>about</NavLink>
                             <a href='https://drive.google.com/file/d/18hofa9_fnNGYDm5SaP0nXMFCR1DgyCqi/view?usp=sharing' target='_blank' rel="noreferrer" className='navlink'>resume</a>
-                            <NavLink exact to='/leisure' className='navlink'>leisure</NavLink>
+                            {/**<NavLink exact to='/leisure' className='navlink'>leisure</NavLink>*/}
                         </div>
                         <Footer/>
                     </div>        

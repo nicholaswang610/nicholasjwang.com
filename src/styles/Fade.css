@@ -8,21 +8,7 @@
 
 .fade-section-up.visible {
     opacity: 1;
-    transform: none;
-    visibility: visible;
-}
-
-.fade-section-right {
-    position: relative;
-    opacity: 0;
-    transform: translateX(-15vw);
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-section-right.visible {
-    opacity: 1;
-    transform: none;
+    transform: translateY(0);
     visibility: visible;
 }
 

@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
-import './Fade.css';
+import './styles/Fade.css';
 const FadeSectionUp = props => {
     const [visible, setVisible] = useState(false);
     const domRef = useRef();
@@ -16,7 +16,7 @@ const FadeSectionUp = props => {
     }, [])
     
     return (
-        <div className={`fade-section-up ${visible ? 'visible' : ''} `} ref={domRef}>
+        <div className={`fade-section-up ${visible ? 'visible ' + props.project : ''} `} ref={domRef}>
             {props.children}
         </div>
     )
