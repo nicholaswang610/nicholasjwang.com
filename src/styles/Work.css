@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1603px) {
+@media only screen and (max-width: 2560px) {
     .work-container {
         position: relative;
         display: flex;
@@ -177,15 +177,12 @@
         z-index: 1;
     }
 
-    .plots-screenshots {
-        margin-top: 5%;
-    }
     .plots-screenshots img{
         margin: 0 20px 0 20px;
     }
 
     .plots-images .construction {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .popinion-images, .pokemon-images, .scrabble-images, .plots-images {
         display: flex;
@@ -225,11 +222,11 @@
     }
 
     .purpleblur {
-        margin-top: -5%;
+        margin-top: -10%;
     }
     .construction {
         position: absolute;
-        width: 150px;
+        min-width: 150px;
         height: 50px;
         background-color: rgb(255, 184, 0);
         text-align: center;
@@ -291,91 +288,7 @@
     }
 }
 
-
-@media only screen and (min-width: 1300px) and (max-width: 1603px) {
-    .work-container {
-        position: relative;
-        display: flex;
-        width: 100vw;
-    }
-
-    .content {
-        position: relative;
-        width: 85%;
-    }
-
-    .intro-container {
-        position: relative;
-        width: 100%;
-        height: 70vh;
-    }
-
-    .intro {
-        position:relative;
-        top: 25%;
-        margin-left: 5%;
-    }
-
-    .intro p {
-        font-size: 42px;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .intro-desc {
-        font-size: 24px;
-        font-weight: 400;
-        margin-top: 1em;
-    }
-
-    .work-availability {
-        background-color: rgba(0,0,0,0.97);
-        width: 255px;
-        height: 63px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3em;
-        border: 1px solid rgba(255,255,255, 0.2);
-        border-radius: 15px;
-    }
-
-    .work-availability p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 63px;
-        color: white;
-    }
-
-    .work-email {
-        display: none;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .work-availability:hover .work-email {
-        display: block;
-        z-index: 2;
-    }
-
-    .work-availability:hover .slider, .work-availability:hover p {
-        display: none;
-    }
-
-
-    .work-availability:hover {
-        background-color: white;
-        color: rgba(0, 0, 0, 0.97);
-    }
-
-    .slider {
-        margin-right: 12px;
-    }
-
-    .projects {
-        position: relative;
-        width: 85vw;
-    }
+@media only screen and (max-width: 1710px) {
 
     .projects p {
         position: relative;
@@ -386,62 +299,6 @@
         margin-right: 10%;
         display: block;
     }
-    .fade-section-up.visible .pando .pando-text .horizontal,
-    .fade-section-up.visible.popinion .popinion-text .horizontal,
-    .fade-section-up.visible.pokemon .pokemon-text .horizontal,
-    .fade-section-up.visible.scrabble .scrabble-text .horizontal,
-    .fade-section-up.visible.plots .plots-text .horizontal{
-        transform: scaleX(1);
-
-    }
-    .num {
-        font-size: 24px !important;
-        font-weight: 400 !important;
-        color: rgba(255,255,255,0.5);
-    }
-
-    .horizontal {
-        height: 1px;
-        border-bottom: 1px solid white;
-        width: 90%;
-        margin-left: 5%;
-        transform: scaleX(0);
-        transform-origin: 0%;
-        transition: transform 1s;
-    }
-
-
-    .pando {
-        position: relative;
-        width: 75vw;
-        height: 500px;
-        background: rgba(0, 0, 0, 0.5);
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 15px;
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        overflow:hidden;
-    }
-
-    .pando, .popinion, .plots, .pokemon, .scrabble {
-        transition: 0.5s;
-    }
-
-    .pando-text {
-        position: relative;
-        margin-top: -14%;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 35%;
-    }
-
-    .popinion-text, .pokemon-text, .scrabble-text, .plots-text {
-        margin-top: 10%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
     .pando-desc, .popinion-desc, .pokemon-desc, .scrabble-desc, .plots-desc {
         position: relative;
@@ -450,16 +307,6 @@
         color: rgba(255,255,255, 0.5);
         width: 100%;
         font-weight: 600;
-    }
-
-    .pando-images {
-        right:10%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 500px;
-        width: 55%;
     }
 
     .pando-screenshot, .plots-screenshots {
@@ -474,22 +321,11 @@
     .plots-screenshots {
         margin-top: 5%;
     }
-    .plots-screenshots img{
-        margin: 0 20px 0 20px;
-    }
 
     .plots-images .construction {
         margin-top: 20%;
     }
-    .popinion-images, .pokemon-images, .scrabble-images, .plots-images {
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
-    }
 
-    .scrabble-images {
-        margin-top: 8%;
-    }
     .pokemon-images {
         margin-top: 22%;
         transform: scale(1.1);
@@ -497,75 +333,18 @@
     .pokemon2 {
         display: none;
     }
-    .greenblur, .pinkblur, .whiteblur, .redblur, .blueblur, .purpleblur {
-        position: absolute;
-        transition: 0.5s;
-    }
-
-    .pinkblur {
-        margin-top: -7%;
-        margin-left: -7%;
-    }
 
     .whiteblur {
         margin-top: -5%;
+        margin-right: 0;
     }
 
     .redblur {
         display: none;
     }
 
-    .blueblur {
-        margin-top: -10%;
-    }
-
     .purpleblur {
         margin-top: -5%;
-    }
-    .construction {
-        position: absolute;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(255, 184, 0);
-        text-align: center;
-        line-height: 50px;
-        border-radius: 25px;
-        color: black;
-        font-weight: 700;
-        z-index: 2;
-    }
-
-    .pando:hover .pando-images .greenblur, .popinion:hover .popinion-images .pinkblur, 
-    .pokemon:hover .pokemon-images .whiteblur, .pokemon:hover .pokemon-images .redblur,
-    .scrabble:hover .scrabble-images .blueblur,
-    .plots:hover .plots-images .purpleblur {
-        transform:scale(1.5);
-    }
-
-    .pando:hover, .fade-section-up.visible.popinion:hover, .fade-section-up.visible.pokemon:hover, .fade-section-up.visible.scrabble:hover, .fade-section-up.visible.plots:hover {
-        transition: transform 0.5s;
-        transform: translateY(-14px);
-        box-shadow: 0 14px 14px 0 rgba(255,255,255,0.05);
-    }
-
-    .popinion-and-pokemon, .scrabble-and-plots {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 75vw;
-        height: 700px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 15px;
-        overflow-anchor: none;
-    }
-
-    .fade-section-up.visible.popinion a{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        height:
     }
 
     .popinion, .pokemon, .scrabble, .plots {
@@ -577,99 +356,9 @@
         overflow: hidden;
     }
 
-    .connect {
-        font-size: 24px;
-        font-weight: 400;
-        margin-top: 5em;
-        margin-bottom: 5em;
-        text-align: center;
-    }
 }
 
-@media only screen and (min-width: 1052px) and (max-width: 1300px) {
-    .work-container {
-        position: relative;
-        display: flex;
-        width: 100vw;
-    }
-
-    .content {
-        position: relative;
-        width: 85%;
-    }
-
-    .intro-container {
-        position: relative;
-        width: 100%;
-        height: 70vh;
-    }
-
-    .intro {
-        position:relative;
-        top: 25%;
-        margin-left: 5%;
-    }
-
-    .intro p {
-        font-size: 42px;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .intro-desc {
-        font-size: 24px;
-        font-weight: 400;
-        margin-top: 1em;
-    }
-
-    .work-availability {
-        background-color: rgba(0,0,0,0.97);
-        width: 255px;
-        height: 63px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3em;
-        border: 1px solid rgba(255,255,255, 0.2);
-        border-radius: 15px;
-    }
-
-    .work-availability p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 63px;
-        color: white;
-    }
-
-    .work-email {
-        display: none;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .work-availability:hover .work-email {
-        display: block;
-        z-index: 2;
-    }
-
-    .work-availability:hover .slider, .work-availability:hover p {
-        display: none;
-    }
-
-
-    .work-availability:hover {
-        background-color: white;
-        color: rgba(0, 0, 0, 0.97);
-    }
-
-    .slider {
-        margin-right: 12px;
-    }
-
-    .projects {
-        position: relative;
-        width: 85vw;
-    }
+@media only screen and (max-width: 1299px) {
 
     .projects p {
         position: relative;
@@ -679,61 +368,6 @@
         margin-left: 6%;
         margin-right: 6%;
         display: block;
-    }
-    .fade-section-up.visible .pando .pando-text .horizontal,
-    .fade-section-up.visible.popinion .popinion-text .horizontal,
-    .fade-section-up.visible.pokemon .pokemon-text .horizontal,
-    .fade-section-up.visible.scrabble .scrabble-text .horizontal,
-    .fade-section-up.visible.plots .plots-text .horizontal{
-        transform: scaleX(1);
-
-    }
-    .num {
-        font-size: 24px !important;
-        font-weight: 400 !important;
-        color: rgba(255,255,255,0.5);
-    }
-
-    .horizontal {
-        height: 1px;
-        border-bottom: 1px solid white;
-        width: 90%;
-        margin-left: 5%;
-        transform: scaleX(0);
-        transform-origin: 0%;
-        transition: transform 1s;
-    }
-
-    .pando {
-        position: relative;
-        width: 75vw;
-        height: 500px;
-        background: rgba(0, 0, 0, 0.5);
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 15px;
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        overflow:hidden;
-    }
-
-    .pando, .popinion, .plots, .pokemon, .scrabble {
-        transition: 0.5s;
-    }
-
-    .pando-text {
-        position: relative;
-        margin-top: -14%;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 35%;
-    }
-
-    .popinion-text, .pokemon-text, .scrabble-text, .plots-text {
-        margin-top: 10%;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 
     .pando-desc, .popinion-desc, .pokemon-desc, .scrabble-desc, .plots-desc {
@@ -745,28 +379,10 @@
         font-weight: 600;
     }
 
-    .pando-images {
-        right:10%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 500px;
-        width: 55%;
-    }
-
-    .pando-screenshot, .plots-screenshots {
-        opacity: 0.6;
-    }
-
-    .pando-screenshot, .popinion-screenshot, .pokemon-screenshots, .scrabble-screenshot, .plots-screenshots {
-        position: relative;
-        z-index: 1;
-    }
-
     .plots-screenshots {
         margin-top: 5%;
     }
+
     .plots-screenshots img{
         margin: 0 20px 0 20px;
     }
@@ -774,6 +390,7 @@
     .plots-images .construction {
         margin-top: 20%;
     }
+
     .popinion-images, .pokemon-images, .scrabble-images, .plots-images {
         display: flex;
         justify-content: center;
@@ -783,86 +400,25 @@
     .popinion-images {
         transform: scale(0.8);
     }
+
     .scrabble-images {
         margin-top: 8%;
     }
     .pokemon-images {
-        margin-top: 22%;
+        margin-top: 30%;
         transform: scale(1.1);
     }
+
     .pokemon2 {
         display: none;
-    }
-    .greenblur, .pinkblur, .whiteblur, .redblur, .blueblur, .purpleblur {
-        position: absolute;
-        transition: 0.5s;
-    }
-
-    .pinkblur {
-        margin-top: -7%;
-        margin-left: -7%;
-    }
-
-    .whiteblur {
-        margin-top: -5%;
     }
 
     .redblur {
         display: none;
     }
 
-    .blueblur {
-        margin-top: -10%;
-    }
-
     .purpleblur {
         margin-top: -5%;
-    }
-    .construction {
-        position: absolute;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(255, 184, 0);
-        text-align: center;
-        line-height: 50px;
-        border-radius: 25px;
-        color: black;
-        font-weight: 700;
-        z-index: 2;
-    }
-
-    .pando:hover .pando-images .greenblur, .popinion:hover .popinion-images .pinkblur, 
-    .pokemon:hover .pokemon-images .whiteblur, .pokemon:hover .pokemon-images .redblur,
-    .scrabble:hover .scrabble-images .blueblur,
-    .plots:hover .plots-images .purpleblur {
-        transform:scale(1.5);
-    }
-
-    .pando:hover, .fade-section-up.visible.popinion:hover, .fade-section-up.visible.pokemon:hover, .fade-section-up.visible.scrabble:hover, .fade-section-up.visible.plots:hover {
-        transition: transform 0.5s;
-        transform: translateY(-14px);
-        box-shadow: 0 14px 14px 0 rgba(255,255,255,0.05);
-    }
-
-    .popinion-and-pokemon, .scrabble-and-plots {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 75vw;
-        height: 700px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 15px;
-        overflow-anchor: none;
-    }
-
-    .popinion, .pokemon, .scrabble, .plots {
-        position: relative;
-        width: 49.5%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 15px;
-        overflow: hidden;
     }
 
     .fade-section-up.visible.popinion a{
@@ -881,154 +437,19 @@
     }
 }
 
-@media only screen and (max-width: 1051px) {
-    .work-container {
-        position: relative;
-        display: flex;
-        width: 100vw;
-    }
-
-    .content {
-        position: relative;
-        width: 85%;
-    }
-
-    .intro-container {
-        position: relative;
-        width: 100%;
-        height: 70vh;
-    }
-
-    .intro {
-        position:relative;
-        top: 25%;
-        margin-left: 5%;
-    }
-
-    .intro p {
-        font-size: 42px;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .intro-desc {
-        font-size: 24px;
-        font-weight: 400;
-        margin-top: 1em;
-    }
-
-    .work-availability {
-        background-color: rgba(0,0,0,0.97);
-        width: 255px;
-        height: 63px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3em;
-        border: 1px solid rgba(255,255,255, 0.2);
-        border-radius: 15px;
-    }
-
-    .work-availability p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 63px;
-        color: white;
-    }
-
-    .work-email {
-        display: none;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .work-availability:hover .work-email {
-        display: block;
-        z-index: 2;
-    }
-
-    .work-availability:hover .slider, .work-availability:hover p {
-        display: none;
-    }
-
-
-    .work-availability:hover {
-        background-color: white;
-        color: rgba(0, 0, 0, 0.97);
-    }
-
-    .slider {
-        margin-right: 12px;
-    }
-
-    .projects {
-        position: relative;
-        width: 85vw;
-    }
-
-    .projects p {
-        position: relative;
-        font-size: 36px;
-        font-weight: 700;
-        margin: 0;
-        margin-left: 6%;
-        margin-right: 6%;
-        display: block;
-    }
-    .fade-section-up.visible .pando .pando-text .horizontal,
-    .fade-section-up.visible.popinion .popinion-text .horizontal,
-    .fade-section-up.visible.pokemon .pokemon-text .horizontal,
-    .fade-section-up.visible.scrabble .scrabble-text .horizontal,
-    .fade-section-up.visible.plots .plots-text .horizontal{
-        transform: scaleX(1);
-
-    }
-    .num {
-        font-size: 24px !important;
-        font-weight: 400 !important;
-        color: rgba(255,255,255,0.5);
-    }
-
-    .horizontal {
-        height: 1px;
-        border-bottom: 1px solid white;
-        width: 90%;
-        margin-left: 5%;
-        transform: scaleX(0);
-        transform-origin: 0%;
-        transition: transform 1s;
-    }
-
-    .pando {
-        position: relative;
-        width: 75vw;
-        height: 500px;
-        background: rgba(0, 0, 0, 0.5);
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 15px;
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        overflow:hidden;
-    }
-
-    .pando, .popinion, .plots, .pokemon, .scrabble {
-        transition: 0.5s;
-    }
-
+@media only screen and (max-width: 1104px) {
     .pando-text {
         position: relative;
         margin-top: -14%;
         margin-left: 5%;
-        margin-right: 5%;
-        width: 35%;
+        min-width: 250px;
     }
 
     .popinion-text, .pokemon-text, .scrabble-text, .plots-text {
-        margin-top: 10%;
+        margin-top: -5%;
         margin-left: 5%;
         margin-right: 5%;
+        min-width: 250px;
     }
 
     .pando-desc, .popinion-desc, .pokemon-desc, .scrabble-desc, .plots-desc {
@@ -1041,94 +462,63 @@
     }
 
     .pando-images {
-        margin-right:5%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         height: 500px;
-        width: 55%;
-    }
-
-    .pando-screenshot, .plots-screenshots {
-        opacity: 0.6;
-    }
-
-    .pando-screenshot, .popinion-screenshot, .pokemon-screenshots, .scrabble-screenshot, .plots-screenshots {
-        position: relative;
-        z-index: 1;
-    }
-
-    .popinion-screenshot{
-        max-height: 100%;
-    }
-
-    .plots-screenshots {
-        margin-top: 5%;
-    }
-
-    .plots-screenshots img{
-        margin: 0 20px 0 20px;
+        transform: scale(0.8);
     }
 
     .plots-images .construction {
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     .popinion-images, .pokemon-images, .scrabble-images, .plots-images {
         display: flex;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 3%;
         margin-right: 5%;
     }
 
+    .popinion-text {
+        margin-right: 0;
+    }
+    .popinion-images {
+        transform: scale(0.8);
+        width: 100%;
+    }
 
-    .scrabble-images {
-        margin-top: 8%;
+    .plots-images {
+        margin: 0;
+        width: 100%;
     }
 
     .pokemon-images {
-        margin-top: 22%;
-    }
-
-    .greenblur, .pinkblur, .whiteblur, .redblur, .blueblur, .purpleblur {
-        position: absolute;
-        transition: 0.5s;
+        margin-top: 5%;
+        transform: scale(1.2);
     }
 
     .pinkblur {
-        margin-top: -7%;
+        margin-top: -10%;
         margin-left: -7%;
     }
 
     .whiteblur {
         margin-top: -5%;
-        margin-right: 40%;
     }
 
     .redblur {
-        margin-top: -5%;
-        margin-left: 40%;
+        display: none;
     }
 
     .blueblur {
-        margin-top: -10%;
+        margin-top: -20%;
     }
 
     .purpleblur {
-        margin-top: -5%;
-    }
-    .construction {
-        position: absolute;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(255, 184, 0);
-        text-align: center;
-        line-height: 50px;
-        border-radius: 25px;
-        color: black;
-        font-weight: 700;
-        z-index: 2;
+        margin-top: -10%;
+        transform:scaleX(0.8);
     }
 
     .pando:hover .pando-images .greenblur, 
@@ -1139,13 +529,12 @@
         transform:scale(1.5);
     }
 
-    .pando:hover, .fade-section-up.visible.popinion:hover, .fade-section-up.visible.pokemon:hover, .fade-section-up.visible.scrabble:hover, .fade-section-up.visible.plots:hover {
-        transition: transform 0.5s;
-        transform: translateY(-14px);
-        box-shadow: 0 14px 14px 0 rgba(255,255,255,0.05);
+    .pokemon:hover .pokemon-images .whiteblur {
+        transform: scale(1.7);
     }
 
     .popinion-and-pokemon, .scrabble-and-plots {
+        display: block;
         position: relative;
         width: 75vw;
         height: 1015px;
@@ -1164,10 +553,15 @@
         overflow: hidden;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .pokemon, .plots {
         margin-top: 15px;
+    }
+
+    .pokemon2 {
+        display: none;
     }
 
     .fade-section-up.visible.popinion a{
@@ -1179,12 +573,219 @@
         align-items: center;
     }
 
-    .connect {
-        font-size: 24px;
-        font-weight: 400;
-        margin-top: 5em;
-        margin-bottom: 5em;
-        text-align: center;
+    .plots2{ 
+        display: none;
+    }
+    .scrabble-images {
+        transform: scale(0.8);
+        margin-top: 0;
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .work-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .content {
+        position: relative;
+        width: 100%;
+    }
+
+    .greeting {
+        font-size: 42px;
+        font-weight: 700;
+        margin: 0;
+        min-width: 650px;
+    }
+
+    .projects {
+        position: relative;
+        width: 100%;
+    }
+
+    .pando {
+        position: relative;
+        width: auto;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        overflow:hidden;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .pando-text {
+        position: relative;
+        margin-top: -14%;
+        margin-left: 5%;
+        min-width: 250px;
+    }
+
+    .popinion-text, .pokemon-text, .scrabble-text, .plots-text {
+        margin-top: -5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        min-width: 250px;
+    }
+
+    .pando-desc, .popinion-desc, .pokemon-desc, .scrabble-desc, .plots-desc {
+        position: relative;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        color: rgba(255,255,255, 0.5);
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .pando-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        transform: scale(0.7);
+    }
+
+    .popinion-images, .pokemon-images, .scrabble-images, .plots-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        margin-right: 5%;
+    }
+
+    .popinion-text {
+        margin-right: 0;
+    }
+
+    .popinion-images {
+        transform: scale(0.8);
+        width: 100%;
+    }
+    .plots-images {
+        margin: 0;
+        width: 100%;
+    }
+
+    .pokemon-images {
+        margin-top: 5%;
+        transform: scale(1.2);
+    }
+
+    .pinkblur {
+        margin-top: -10%;
+        margin-left: -7%;
+    }
+
+    .whiteblur {
+        margin-top: -10%;
+    }
+
+    .blueblur {
+        margin-top: -20%;
+    }
+
+    .purpleblur {
+        margin-top: -10%;
+        transform:scaleX(0.8);
+    }
+
+    .pokemon:hover .pokemon-images .whiteblur {
+        transform: scale(1.7);
+    }
+
+    .popinion-and-pokemon, .scrabble-and-plots {
+        position: relative;
+        width: auto;
+        height: 815px;
+        margin-top: 15px;
+        overflow-anchor: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .popinion, .pokemon, .scrabble, .plots {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pokemon, .plots {
+        margin-top: 15px;
+    }
+
+    .pokemon2 {
+        display: none;
+    }
+
+    .fade-section-up.visible.popinion a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .plots2{ 
+        display: none;
+    }
+
+    .scrabble-images {
+        transform: scale(0.8);
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+
+    .greeting {
+        font-size: 36px !important;
+        font-weight: 700;
+        margin: 0;
+        min-width: 100%;
+    }
+
+    .intro-desc {
+        font-size: 18px !important;
+    }
+
+    .pando-text {
+        display: none;
+    }
+
+    .popinion-text, .pokemon-text, .scrabble-text, .plots-text {
+        display: none;
+    }
+
+    .pando, .pokemon, .scrabble {
+        justify-content: center;
+    }
+    .plots-images {
+        display: flex;
+        align-items: center;
+    }
+    .plots .construction {
+        position: absolute;
+        margin: 0;
+    }
+
+    .purpleblur {
+        margin-top: 0%;
+    }
+}

@@ -1,102 +1,143 @@
-.project-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 85vh;
-}
-.project-container {
-    position: relative;
-    display: flex;
-    width: 100vw;
+@media only screen and (max-width: 2560px){
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-container {
+        position: relative;
+        display: flex;
+        width: 100vw;
+    }
+
+    .content {
+        position: relative;
+        width: 85vw;
+    }
+
+    .popinion-cover {
+        max-width: 100%;
+        margin: 0%;
+    }
+    .what-i-did, .timeline, .first-draft, .redesign, .keywords, .final-solution, .thanks-for-reading, .project-details {
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .header { 
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .what-i-did .text {
+        font-size: 18px;
+        color: rgba(255,255,255, 0.5);
+    }
+
+    .timeline .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline img, .first-draft img, .redesign img, .final-solution img, .thanks-for-reading img {
+        max-width: 100%;
+
+        margin-top: 5%;
+    }
+
+    .thanks-for-reading img {
+        margin-left: 10%;
+    }
+    .number {
+        width: 68px;
+        height: 68px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: white;
+        color: rgba(0,0,0,0.97);
+        text-align: center;
+        margin-right: 0.5em;
+    }
+
+    .first-draft .header .number {
+        background-color: #2D353F;
+        color: white;
+    }
+
+    .modernize {
+        width: 591px;
+        font-size: 96px;
+        display: block;
+        line-height: 96px;
+    }
+
+    .modernize .subtext, .personalize .subtext, .incentivize .subtext {
+        color: rgba(255,255,255, 0.7);
+        display: block;
+        margin-left: 100px;
+    }
+
+    .personalize {
+        width: 572px;
+        font-size: 72px;
+        display: block;
+        line-height: 72px;
+        margin-left: 55%;
+    }
+
+    .personalize .subtext {
+        margin-left: 80px;
+    }
+
+    .incentivize {
+        width: 725px;
+        font-size: 144px;
+        display: block;
+        line-height: 144px;
+        margin-left: 20%;
+    }
+
+    .incentivize .subtext {
+        margin-left: 150px;
+    }
+
+    .project-details {
+        display: none;
+    }
+
+    .go-back {
+        display: none;
+    }
 }
 
-.content {
-    position: relative;
-    width: 85vw;
+@media only screen and (max-width: 950px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modernize, .personalize, .incentivize {
+        display: none;
+    }
+
+    .project-details {
+        display: block;
+    }
+
+    .role, .time, .team, .tools {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    .go-back {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.popinion-cover {
-    max-width: 100%;
-    margin: 0%;
-}
-.what-i-did, .timeline, .first-draft, .redesign, .keywords, .final-solution, .thanks-for-reading {
-    margin-top: 10%;
-    margin-left: 5%;
-    width: 90%;
-}
-.header { 
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.what-i-did .text {
-    font-size: 18px;
-    color: rgba(255,255,255, 0.5);
-}
-
-.timeline .header {
-    display: flex;
-    align-items: center;
-}
-
-.timeline img, .first-draft img, .redesign img, .final-solution img, .thanks-for-reading img {
-    max-width: 100%;
-
-    margin-top: 5%;
-}
-
-.thanks-for-reading img {
-    margin-left: 10%;
-}
-.number {
-    width: 68px;
-    height: 68px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: white;
-    color: rgba(0,0,0,0.97);
-    text-align: center;
-    margin-right: 0.5em;
-}
-
-.first-draft .header .number {
-    background-color: #2D353F;
-    color: white;
-}
-
-.modernize {
-    width: 591px;
-    font-size: 96px;
-    display: block;
-    line-height: 96px;
-}
-
-.modernize .subtext, .personalize .subtext, .incentivize .subtext {
-    color: rgba(255,255,255, 0.7);
-    display: block;
-    margin-left: 100px;
-}
-
-.personalize {
-    width: 572px;
-    font-size: 72px;
-    display: block;
-    line-height: 72px;
-    margin-left: 55%;
-}
-
-.personalize .subtext {
-    margin-left: 80px;
-}
-
-.incentivize {
-    width: 725px;
-    font-size: 144px;
-    display: block;
-    line-height: 144px;
-    margin-left: 20%;
-}
-
-.incentivize .subtext {
-    margin-left: 150px;
+@media only screen and (max-width: 624px) {
+    .role, .time, .team, .tools {
+        font-size: 14px;
+    }
 }

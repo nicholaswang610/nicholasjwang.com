@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import {NavLink} from 'react-router-dom';
 import FadeSectionUp from './FadeSectionUp';
 import FadeSectionIn from './FadeSectionIn';
 import popinion from './images/popinion-cover.png';
@@ -14,6 +15,7 @@ const Popinion = (props) => {
     window.scrollTo(0,0);
     return(
         <div className='project-container'>
+            <NavLink exact to ='/' className='go-back'>&lt; back</NavLink>
             <Navbar></Navbar>
             <div className='content'>
                 <FadeSectionUp>
@@ -30,6 +32,27 @@ const Popinion = (props) => {
                             <span style={{fontWeight:'500', color:'white'}}> movies, video games, music, and books</span>.&nbsp;
                             Over the summer, I created a website to <span style={{fontWeight:'500', color:'white'}}>connect</span> people through the products 
                             which they feel strongly about.&nbsp;I also drafted a redesign for the site, to be implemented in the near future.    
+                        </div>
+                    </div>
+                </FadeSectionUp>
+                <FadeSectionUp>
+                    <div className='project-details'>
+                        <div className='header'>Project Details</div>
+                        <div className='role'>
+                            <div>Role</div>
+                            <div style={{color: 'rgba(255,255,255, 0.5)'}}>Developer, Designer</div>
+                        </div>
+                        <div className='time'>
+                            <div>Timeline</div>
+                            <div style={{color: 'rgba(255,255,255, 0.5)'}}>2 months</div>
+                        </div>
+                        <div className='team'>
+                            <div>Team</div>
+                            <div style={{color: 'rgba(255,255,255, 0.5)'}}>Individual</div>
+                        </div>
+                        <div className='tools'>
+                            <div>Tools</div>
+                            <div style={{color: 'rgba(255,255,255, 0.5)'}}>Figma, React, Express, Node, MySQL</div>
                         </div>
                     </div>
                 </FadeSectionUp>

@@ -9,7 +9,10 @@
 .fade-section-up.visible {
     opacity: 1;
     transform: translateY(0);
-    visibility: visible;
+    visibility: visible;    
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .fade-section-in {

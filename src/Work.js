@@ -28,7 +28,7 @@ const Work = (props) => {
                 <FadeSectionUp>
                     <div className='intro-container'>
                         <div className='intro'>
-                            <p>
+                            <p className='greeting'>
                                 Hey! My name is Nicholas Wang. &#127877;
                             </p>
                             <div className='intro-desc'>
@@ -45,8 +45,8 @@ const Work = (props) => {
                         </div>
                     </div>
                 </FadeSectionUp>
+                <FadeSectionUp>
                 <div className='projects'>
-                    <FadeSectionUp>
                         <p>Projects</p>
                         <div className='pando'>
                             <div className='pando-text'>
@@ -61,7 +61,6 @@ const Work = (props) => {
                                 <div className='construction'>Under Construction</div>
                             </div>
                         </div>
-                    </FadeSectionUp>
                     <div className='popinion-and-pokemon'>
                         <FadeSectionUp project='popinion'>
                             <NavLink exact to='/popinion'>
@@ -119,8 +118,8 @@ const Work = (props) => {
                                 <div className='construction'>Under Construction</div>
                                 <img className='purpleblur' src={purpleblur} alt='purple blur'></img>
                                 <div className='plots-screenshots'>
-                                    <img src={plots1} alt='Screenshot of WhatsPlots(1)'></img>
-                                    <img src={plots2} alt='Screenshot of WhatsPlots(2)'></img>
+                                    <img src={plots1} className='plots1' alt='Screenshot of WhatsPlots(1)'></img>
+                                    <img src={plots2} className='plots2' alt='Screenshot of WhatsPlots(2)'></img>
                                 </div>
                                 
                             </div>
@@ -131,6 +130,7 @@ const Work = (props) => {
                     <div className='connect'>
                         Want to connect?  <div>Email me at njwang@usc.edu.</div>
                     </div>
+                </FadeSectionUp>
                 </FadeSectionUp>
             </div>
         </div>
