@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import {NavLink} from 'react-router-dom';
 import FadeSectionUp from './FadeSectionUp';
 import FadeSectionIn from './FadeSectionIn';
 import popinion from './images/popinion-cover.png';

@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './styles/Work.css';
 import Navbar from './Navbar';
-import Footer from './Footer';
 import FadeSectionUp from './FadeSectionUp';
 import pando from './images/screenshots/pando-mock.png';
 import popinion from './images/screenshots/popinion.png';
@@ -30,7 +29,7 @@ const Work = (props) => {
                     <div className='intro-container'>
                         <div className='intro'>
                             <p className='greeting'>
-                                Hey! My name is Nicholas Wang. &#127877;
+                                Hi! My name is Nicholas Wang. &#127877;
                             </p>
                             <div className='intro-desc'>
                                 I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student and <span style={{color:'#598DF2'}}>web developer</span>.
