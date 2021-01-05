@@ -15,7 +15,6 @@ const Popinion = (props) => {
     window.scrollTo(0,0);
     return(
         <div className='project-container'>
-            <NavLink exact to ='/' className='go-back'>&lt; back</NavLink>
             <Navbar></Navbar>
             <div className='content'>
                 <FadeSectionUp>

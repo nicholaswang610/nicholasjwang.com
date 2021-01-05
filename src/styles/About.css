@@ -1,41 +1,89 @@
-.about-container {
-    position: relative;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+@media only screen and (min-width: 951px) {
+
+    .about-container {
+        position: relative;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .about-content {
+        position: relative;
+        width: 85vw;
+    }
+    .about-header {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .biography {
+        display: flex;
+        width: 85%;
+        margin-left: 8%;
+        margin-top: 6%;
+    }
+    .bio-text-container {
+        max-width: 60%;
+    }
+
+    .bio-image {
+        margin-left: 20%;
+        border-radius: 13px;
+        filter: drop-shadow(0 4px 4px rgba(0,0,0,0.7));
+    }
+
+    .biography div p {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.7);
+    }
+
+    p a {
+        color: white;
+    }
+
 }
 
-.about-content {
-    position: relative;
-    width: 85vw;
-}
-.about-header {
-    font-size: 36px;
-    font-weight: 700;
-}
+@media only screen and (max-width: 950px) {
+    .about-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
 
-.biography {
-    display: flex;
-    width: 85%;
-    margin-left: 8%;
-    margin-top: 6%;
-}
-.bio-text-container {
-    max-width: 60%;
-}
+    .about-content {
+        position: relative;
+        width: 85vw;
+    }
+    .about-header {
+        font-size: 24px;
+        font-weight: 700;
+    }
 
-.bio-image {
-    margin-left: 20%;
-    border-radius: 13px;
-    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.7));
-}
+    .biography {
+        display: flex;
+        width: 85%;
+        margin-left: 8%;
+        margin-top: 6%;
+    }
+    .bio-text-container {
+        position: relative;
+        max-width: 100%;
+    }
 
-.biography div p {
-    font-size: 18px;
-    font-weight: 400;
-    color: rgba(255,255,255,0.7);
-}
+    .bio-image {
+        display: none;
+    }
 
-p a {
-    color: white;
+    .biography div p {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.7);
+    }
+
+    p a {
+        color: white;
+    }
 }

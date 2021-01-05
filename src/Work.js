@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './styles/Work.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import FadeSectionUp from './FadeSectionUp';
 import pando from './images/screenshots/pando-mock.png';
 import popinion from './images/screenshots/popinion.png';
@@ -34,6 +35,11 @@ const Work = (props) => {
                             <div className='intro-desc'>
                                 I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student and <span style={{color:'#598DF2'}}>web developer</span>.
                             </div>
+                            <div className='intro-links'>
+                                <a href='mailto: njwang@usc.edu' rel='noreferrer'>Email</a>
+                                <a href='https://github.com/nicholaswang610' target='_blank' rel='noreferrer'>Github</a>
+                                <a href='https://www.linkedin.com/in/nicholaswang610/' target='_blank' rel='noreferrer'>Linkedin</a>
+                            </div>
                             <a href='mailto: njwang@usc.edu'>
                                 <div className='work-availability'>
                                     <div className='work-email'>njwang@usc.edu</div>
@@ -41,7 +47,6 @@ const Work = (props) => {
                                     <p>Available for work</p>
                                 </div>
                             </a>
-                            
                         </div>
                     </div>
                 </FadeSectionUp>

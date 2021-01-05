@@ -117,11 +117,50 @@
 
 
 @media only screen and (max-width: 950px) {
-    .navbar {
-        display: none;
+    .navbar, .project-navbar {
+        height: 100%;
+        display: flex;
+        z-index: 1;
+        background: black;
+        width: 100%;
+        justify-content: space-between;
     }
 
-    .project-navbar {
+    .navbar-items {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navlinks {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2em;
+    }
+
+    .navlink {
+        text-decoration: none;
+        color: rgba(255,255,255,0.5);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .navlink.active {
+        color: white;
+    }
+
+    .navlink:hover {
+        color: white;
+    }
+
+    .logo {
+        color: white;
+        text-decoration: none;
+        margin-left: 2em;
+    }
+
+    .nav-footer {
         display: none;
     }
 }
