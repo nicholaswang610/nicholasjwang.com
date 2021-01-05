@@ -29,7 +29,7 @@ const Work = (props) => {
                     <div className='intro-container'>
                         <div className='intro'>
                             <p className='greeting'>
-                                Hi! My name is Nicholas Wang. &#127877;
+                                Hey! My name is Nicholas Wang. &#127877;
                             </p>
                             <div className='intro-desc'>
                                 I'm a <span style={{color:'#DA2F2F'}}>computer science</span> student and <span style={{color:'#598DF2'}}>web developer</span>.
