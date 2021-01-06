@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Visit at nicholasjwang.com or clone it locally:
+[nicholasjwang.com](https://www.nicholasjwang.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
